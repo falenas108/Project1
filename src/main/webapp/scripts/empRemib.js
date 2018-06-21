@@ -71,19 +71,13 @@ function getEmployeeNewSession(xhr){
     response = JSON.parse(xhr.response);
     
     document.getElementById("welcome").innerHTML="Welcome, "+response.name;
-     if(response.employeeList.length > 0){
-    	//is a manager
-        unhide("managerTab");   
-    }
+   
 }
 
 function getEmployeeOldSession(response){
 
     document.getElementById("welcome").innerHTML="Welcome, "+response.name;
-    if(response.employeeList.length > 0){
-        //is a manager
-        unhide("managerTab");   
-    }
+   
 }
 
 function getNewEmployeeReimbursements(xhr){

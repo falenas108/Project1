@@ -97,9 +97,7 @@ function fillFields(response){
   emailField.innerHTML = response.email;
   nameField.innerHTML = response.name;
   passwordField.innerHTML = response.password;
-  if(response.employeeList.length > 0){
-    unhide("managerTab");   
-  }
+ 
 }
 
 function checkValidEmail(xhr){
